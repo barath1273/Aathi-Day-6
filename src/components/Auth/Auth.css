@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.auth-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f3f9e4;
+    padding: 2rem;
+    font-family:  'Poppins',sans-serif;
+}
+
+.auth-form{
+    background: #fff;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.295);
+    width: 100%;
+    margin: 2rem;
+    max-width: 30rem;
+    text-align:center;
+}
+
+.icon-con{
+    display: flex;
+    flex-direction: center;
+    margin: 1rem;
+}
+
+.auth-form h1{
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #000;
+}
+.form-group{
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.form-group label{
+    width: 100%;
+    margin-bottom: 1.75rem;
+    font-weight: bold;
+    color:#333;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: .25rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.forgot,.back-to-signin{
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-align: right;
+    color:rgba(67, 67, 250, 0.964);
+}
+.forgot:hover,.back-to-signin:hover{
+    color: #770877;
+}
+
+.btn {
+    text-align: center;
+    padding: 10px 15px;
+    display: block;
+    border: none;
+    border: .25rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    font-family: 'Poppins';
+    border-radius: 3px;
+    color: white;
+}
+
+
+.btn-login{
+    background-color: #556ee6;
+}
+
+
+
+.auth-options{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.btn-admin,.btn-sales,.btn-pur{
+    background-color: #556ee6;
+
+}
+.btn-login:hover{
+    background-color: #04b24f;
+}
+.btn-admin:hover{
+   background-color: #770877;
+
+}
+.btn-sales:hover{
+        background-color:#f56725;
+
+}
+.btn-pur:hover{
+    background-color:  #cd0e0e;
+
+}

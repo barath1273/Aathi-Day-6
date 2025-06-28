@@ -1,0 +1,50 @@
+body{
+    font-family: 'poppins';
+    font-size: 20px;
+}
+.nav-menu {
+    width: 200px;
+    transition: width 0.3s ease;
+    background-color: #567cc9;
+    color: white;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.nav-menu.closed {
+    width: 60px;
+}
+
+.logo-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    gap:25px;
+}
+
+.hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+.logo-con img{
+    height: 50px;
+    width: 50px;
+}
+
+.nav-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    padding: 1rem;
+}
+.nav-button:hover{
+    background-color: #757575;
+}
+
+.nav-link.active{
+    background-color: #757575;
+}
