@@ -43,7 +43,7 @@ const Acc_login = () => {
                 <img src={acclogo} alt="" />
             </div>
             <div className='auth-form'>
-                <h1>Admin Sign-In</h1>
+                <h1>Accountant Sign-In</h1>
                 <form onSubmit={adminsignin}>
                     <div className="form-new">
                         <label>Email <span className='required'>*</span></label>
@@ -55,7 +55,7 @@ const Acc_login = () => {
                         <a href="" className='forgot' onClick={navtofor} >Forgot Password?</a>
                     </div>
                     <div className="form-group">
-                        <button type="submit" className='btn btn-login'>Login</button>
+                        <button type="submit" className='button button-login'>Login</button>
                     </div>
                 </form>
                 {/* <div className="auth-options">

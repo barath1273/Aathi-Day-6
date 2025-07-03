@@ -55,7 +55,7 @@ const Sale_login = () => {
                         <a href="" className='forgot' onClick={navtofor} >Forgot Password?</a>
                     </div>
                     <div className="form-new">
-                        <button type="submit" className='btn btn-login'>Login</button>
+                        <button type="submit" className='button button-login'>Login</button>
                     </div>
                 </form>
                 {/* <div className="auth-options">

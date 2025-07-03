@@ -28,7 +28,7 @@ const Login = () => {
             localStorage.setItem('Auth_token', token);
             localStorage.setItem('email', email)
             document.cookie = 'auth_cookie=poeitubv*12';
-            navigate('/home');
+            navigate('/dashboard');
         } else {
             alert('Wrong Email or Password!');
         }
@@ -66,13 +66,13 @@ const Login = () => {
                         <a href="" className='forgot' onClick={navtofor}>Forgot Password?</a>
                     </div>
                     <div className="form-new">
-                        <button type="submit" className='btn btn-login'>Login</button>
+                        <button type="submit" className='button button-login'>Login</button>
                     </div>
                 </form>
                 <div className="auth-options">
-                    <button className='btn btn-admin' onClick={navAdmin}>Admin</button>
-                    <button className='btn btn-sales' onClick={navSales}>Sales</button>
-                    <button className='btn btn-pur' onClick={navAcc}>Accountant</button>
+                    <button className='button button-admin' onClick={navAdmin}>Admin</button>
+                    <button className='button button-sales' onClick={navSales}>Sales</button>
+                    <button className='button button-pur' onClick={navAcc}>Accountant</button>
                 </div>
             </div>
         </div>
