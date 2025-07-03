@@ -1,14 +1,20 @@
-body{
+body {
     font-family: 'poppins';
     font-size: 20px;
+    margin: 0;
 }
+
 .nav-menu {
-    width: 200px;
-    transition: width 0.3s ease;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 206px;
+    height: 100vh;
     background-color: #567cc9;
     color: white;
-    min-height: 100vh;
     overflow: hidden;
+    transition: width 0.3s ease;
+    z-index: 1000; 
 }
 
 .nav-menu.closed {
@@ -20,7 +26,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    gap:25px;
+    gap: 25px;
 }
 
 .hamburger {
@@ -29,22 +35,103 @@ body{
     color: white;
 }
 
-.logo-con img{
+.logo-con img {
     height: 50px;
     width: 50px;
 }
 
-.nav-link{
+.nav-link {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 25px;
     padding: 1rem;
 }
-.nav-button:hover{
+
+.nav-button:hover {
     background-color: #757575;
 }
 
-.nav-link.active{
+.nav-link.active {
     background-color: #757575;
+}
+
+.logout {
+    box-sizing: border-box;
+    padding: 30px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.logout-button {
+    background-color: #e23244;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c91e2f;
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    width: 207px;
+    background-color: #4e6bb0;
+    margin-top: 1px;
+    transition: all 0.3s ease;
+}
+/* .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #4e6bb0;
+    margin-top: 0.5rem; 
+    padding-left: 1rem;  
+} */
+
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 35px;
+    padding: 8px 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.dropdown-item:hover {
+    background-color: #757575;
+    color: white;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.dropdown-item.active {
+    background-color: #757575;
+    margin: auto;
+}
+
+.main-content {
+    margin-left: 185px; 
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.nav-menu.closed ~ .main-content {
+    margin-left: 60px; 
+}
+.app-container.no-sidebar .main-content {
+    margin-left: 0 !important; 
 }

@@ -1,113 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-.auth-con{
+.auth-con {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: #f0f3f9e4;
-    padding: 2rem;
-    font-family:  'Poppins',sans-serif;
+    padding: 1.5rem;
+    font-family: 'Poppins', sans-serif;
 }
 
-.auth-form{
+.auth-form {
     background: #fff;
-    padding: 2rem;
-    box-sizing: border-box;
-    border-radius: 25px;
+    padding: 1.5rem;
+    border-radius: 18px;
     box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.295);
     width: 100%;
-    margin: 2rem;
     max-width: 30rem;
-    text-align:center;
+    text-align: center;
 }
 
-.icon-con{
+.icon-con {
     display: flex;
-    flex-direction: center;
+    justify-content: center;
     margin: 1rem;
 }
 
-.auth-form h1{
-    margin-bottom: 1rem;
+.auth-form h1 {
+    margin-bottom: 1.5rem;
     font-size: 1.75rem;
     color: #000;
 }
-.form-group{
-    margin-bottom: 1rem;
+
+.form-new {
+    margin-bottom: 1.5rem;
     text-align: left;
 }
-.form-group label{
-    width: 100%;
-    margin-bottom: 1.75rem;
+
+.form-new label {
+    display: block;
+    margin-bottom: 0.5rem;
     font-weight: bold;
-    color:#333;
+    color: #333;
 }
 
-.form-group input{
+.form-new input {
     width: 100%;
     padding: 0.5rem;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
 
-.forgot,.back-to-signin{
+.forgot, .back-to-signin {
     display: block;
     margin-top: 0.5rem;
     font-size: 0.9rem;
     text-decoration: none;
     text-align: right;
-    color:rgba(67, 67, 250, 0.964);
+    color: rgba(67, 67, 250, 0.964);
 }
-.forgot:hover,.back-to-signin:hover{
+
+.forgot:hover, .back-to-signin:hover {
     color: #770877;
 }
 
 .btn {
     text-align: center;
     padding: 10px 15px;
-    display: block;
     border: none;
-    border: .25rem;
     width: 100%;
     margin-top: 0.5rem;
     cursor: pointer;
     font-family: 'Poppins';
     border-radius: 3px;
     color: white;
+    font-size: 1rem;
+    margin-left: auto;
 }
 
-
-.btn-login{
+.btn-login {
     background-color: #556ee6;
 }
 
+.btn-login:hover {
+    background-color: #193be3;
+    color: white;
+}
 
-
-.auth-options{
+.auth-options {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     gap: 10px;
+    margin-top: 1rem;
 }
 
-.btn-admin,.btn-sales,.btn-pur{
+.btn-admin, .btn-sales, .btn-pur {
     background-color: #556ee6;
-
+    width: auto;
+    padding: 8px 12px;
 }
-.btn-login:hover{
-    background-color: #04b24f;
-}
-.btn-admin:hover{
-   background-color: #770877;
 
+.btn-admin:hover {
+    background-color: #193be3;
+    color: white;
 }
-.btn-sales:hover{
-        background-color:#f56725;
 
+.btn-sales:hover {
+    background-color: #193be3;
+    color: white;
 }
-.btn-pur:hover{
-    background-color:  #cd0e0e;
 
+.btn-pur:hover {
+    background-color: #193be3;
+    color: white;
 }

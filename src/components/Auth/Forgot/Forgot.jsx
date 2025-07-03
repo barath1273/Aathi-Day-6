@@ -1,6 +1,6 @@
 import React from 'react'
-import './Auth.css';
-import loginlogo from '../../assets/img/login-96.png';
+import './Forgot.css';
+import loginlogo from '../../../assets/img/login-96.png';
 import { useNavigate } from 'react-router-dom';
 
 const Forgot = () => {
@@ -22,14 +22,14 @@ const Forgot = () => {
                 <div className='auth-form'>
                     <h1>Forgot-Password?</h1>
                     <form   onSubmit={sendlink}>
-                        <div className="form-group">
+                        <div className="form-new">
                             <label>Email <span className='required'>*</span></label>
                             <input type="email" name="" id=""  placeholder='Enter your Email' required />
                         </div>
-                        <div className="form-group">
+                        <div className="form-new">
                             <a href="" className='forgot' onClick={(e)=>{e.preventDefault(); navigate('/');}}>Back to Sign-In</a>
                         </div>
-                        <div className="form-group">
+                        <div className="form-new">
                             <button type="submit" className='btn btn-login'>Send the Reset Link</button>
                         </div>
                     </form>

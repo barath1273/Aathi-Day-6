@@ -1,0 +1,37 @@
+.products-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse:collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.products-table thead, .products-table td {
+    padding: 12px 16px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.products-table thead {
+    background-color: #567cc9;
+    color: white;
+    font-weight: 600;
+}
+
+.products-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.products-table td {
+    font-size: 16px;
+}
+
